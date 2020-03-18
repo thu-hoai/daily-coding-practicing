@@ -1,25 +1,37 @@
-# Daily Coding Problem
+# Daily Coding Practicing
 
 Self-Improving my Algorithmic coding skills.
 
-_Source: Daily Coding Problem_
-
 ## Day 1: Mar 18
-This problem was asked by Google.
+[Transform the Expression.](https://www.spoj.com/problems/ONP/)
 
-A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
+Transform the algebraic expression with brackets into RPN form (Reverse Polish Notation). Two-argument operators: +, -, *, /, ^  (priority from the lowest to the highest), brackets ().
+Operands: only letters: a,b,...,z. Assume that there is only one RPN form (no expressions like a*b*c).
 
-Given the root to a binary tree, count the number of unival subtrees.
-
-For example, the following tree has 5 unival subtrees:
-
+Input
 ```
-   0
-  / \
- 1   0
-    / \
-   1   0
-  / \
- 1   1
- ```
+t [the number of expressions <= 100]
+expression [length <= 400]
+[other expressions]
+```
+Text grouped in [ ] does not appear in the input file.
+
+Output
+```
+The expressions in RPN form, one per line.
+```
+
+Example
+```
+Input:
+3
+(a+(b*c))
+((a+b)*(z+x))
+((a+t)*((b+(a+c))^(c+d)))
+
+Output:
+abc*+
+ab+zx+*
+at+bac++cd+^*
+```
 
