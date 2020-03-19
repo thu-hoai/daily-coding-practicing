@@ -3,8 +3,8 @@
 Self-Improving my Algorithmic coding skills.
 
 
-- Mar 19: [Day 2: Mass of Molecule](#Day-2:-Mass-of-Molecule)
-- Mar 18: [Day 1: Transform the Expression](#Day-1:-Transform-the-Expression)
+- Mar 19: [Day 2: Mass of Molecule](##Day-2:-Mass-of-Molecule)
+- Mar 18: [Day 1: Transform the Expression](##Day-1:-Transform-the-Expression)
 
 
 ## Day 2: Mass of Molecule
