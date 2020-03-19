@@ -3,8 +3,8 @@
 Self-Improving my Algorithmic coding skills.
 
 
-- [Day 2: Mass of Molecule](#Day-2:-Mass-of-Molecule)<br>
-- [Day 1: Transform the Expression](#Day-1:-Transform-the-Expression)<br>
+- Mar 19: [Day 2: Mass of Molecule](#https://github.com/thu-hoai/daily-coding-problem#day-2-mass-of-molecule)<br>
+- Mar 18: [Day 1: Transform the Expression](#https://github.com/thu-hoai/daily-coding-problem#day-1-transform-the-expression)<br>
 
 
 ## Day 2: Mass of Molecule
