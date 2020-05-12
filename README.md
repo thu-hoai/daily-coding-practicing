@@ -34,4 +34,4 @@ _[Link](https://www.spoj.com/problems/MMASS/)_
 
 _\#stack_and_queue_
 
-[\_Link](https://www.spoj.com/problems/ONP/)
+[_Link_](https://www.spoj.com/problems/ONP/)
