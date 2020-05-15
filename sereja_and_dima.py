@@ -6,40 +6,33 @@
 
 
 def calculate_points(cards_list):
-    sereja_points = 0
-    dima_points = 0
+    # Initialize a list of points of 2 players
+    points = [0, 0]
 
-    # 2 pointers representing to Sereja and Dima
+    # 2 pointers representing to the index leftmost card in a row,
+    # or the rightmost.
     i = 0
     j = len(cards_list) - 1
 
-    index = 0
+    # The player takes turns
+    player = 0
+
     while i <= j:
-        index += 1
-        if index % 2 == 1:
-            if cards_list[i] >= cards_list[j]:
-                sereja_points += cards_list[i]
-                i += 1
-
-            else:
-                sereja_points += cards_list[j]
-                j -= 1
-
+        if cards_list[i] >= cards_list[j]:
+            points[player] += cards_list[i]
+            i += 1
         else:
-            if cards_list[i] >= cards_list[j]:
-                dima_points += cards_list[i]
-                i += 1
-            else:
-                dima_points += cards_list[j]
+            points[player] += cards_list[j]
+            j -= 1
 
-                j -= 1
+        player = 1 - player
 
-    return sereja_points, dima_points
+    return points[0], points[1]
 
 
 if __name__ == "__main__":
     # Handle input
     cards_total = int(input())
     cards_list = list(map(int, input().split()))
-    per1, per2 = calculate_points(cards_list)
-    print(per1, per2)
+    player1, player2 = calculate_points(cards_list)
+    print(player1, player2)
