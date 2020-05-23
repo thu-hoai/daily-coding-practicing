@@ -1,12 +1,25 @@
 # Daily Coding Practicing
 
 Self-Improving my Algorithmic coding skills.
+
+- May 24: [Day 7: Bear and Game](#day-7-bear-and-game)
 - May 23: [Day 6: Night at the Museum](#day-6-night-at-the-museum)
 - May 22: [Day 5: Fashion in Berland](#day-5-fashion-in-berland)
 - May 11: [Day 4: Dress'em in Vests!](#day-4-dressem-in-vests!)
 - Mar 20: [Day 3: Street Parade](#day-3-street-parade)
 - Mar 19: [Day 2: Mass of Molecule](#day-2-mass-of-molecule)
 - Mar 18: [Day 1: Transform the Expression](https://github.com/thu-hoai/daily-coding-practicing#day-1-transform-the-expression)
+
+## Day 7: Bear and Game
+
+_\#dynamicArray_
+
+_[Link](https://codeforces.com/problemset/problem/673/A)_
+
+```
+Time limit per test: 2 seconds
+Memory limit per test: 256 megabytes
+```
 
 ## Day 6: Night at the Museum
 
@@ -29,7 +42,6 @@ _[Link](https://codeforces.com/problemset/problem/691/A)_
 Time limit per test: 1 seconds
 Memory limit per test: 256 megabytes
 ```
-
 
 ## Day 4: Dress'em in Vests!
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # https://codeforces.com/problemset/problem/731/A
+# Time complexity: O(n)
 
 def calculate_rotations_number(string):
     string = 'a' + string
