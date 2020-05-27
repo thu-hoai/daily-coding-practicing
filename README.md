@@ -2,6 +2,7 @@
 
 Self-Improving my Algorithmic coding skills.
 
+- May 27: [Day 10: Arrays](#day-10-arrays)
 - May 26: [Day 9: Vitaly and Strings](#day-9-vitaly-and-strings)
 - May 25: [Day 8: Big Segment](#day-8-big-segment)
 - May 24: [Day 7: Bear and Game](#day-7-bear-and-game)
@@ -11,6 +12,18 @@ Self-Improving my Algorithmic coding skills.
 - Mar 20: [Day 3: Street Parade](#day-3-street-parade)
 - Mar 19: [Day 2: Mass of Molecule](#day-2-mass-of-molecule)
 - Mar 18: [Day 1: Transform the Expression](#day-1-transform-the-expression)
+
+## Day 10: Arrays
+
+_\#dynamicArray_
+
+_[Link](https://codeforces.com/problemset/problem/572/A)_
+
+```
+Time limit per test: 2 seconds
+Memory limit per test: 256 megabytes
+```
+
 
 ## Day 9: Vitaly and Strings
 
