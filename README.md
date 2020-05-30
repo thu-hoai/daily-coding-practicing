@@ -2,6 +2,7 @@
 
 Self-Improving my Algorithmic coding skills.
 
+- May 30: [Day 12: Devu, the Dumb Guy](#day-13-devu-the-dump-guy)
 - May 29: [Day 12: Devu, the Dumb Guy](#day-12-devu-the-dump-guy)
 - May 28: [Day 11: Passwords](#day-11-passwords)
 - May 27: [Day 10: Arrays](#day-10-arrays)
@@ -14,6 +15,17 @@ Self-Improving my Algorithmic coding skills.
 - Mar 20: [Day 3: Street Parade](#day-3-street-parade)
 - Mar 19: [Day 2: Mass of Molecule](#day-2-mass-of-molecule)
 - Mar 18: [Day 1: Transform the Expression](#day-1-transform-the-expression)
+
+## Day 13: Devu, the Dumb Guy
+
+_\#algoComplexity_
+
+_[Link](https://codeforces.com/problemset/problem/6/C)_
+
+```
+Time limit per test: 1 seconds
+Memory limit per test: 256 megabytes
+```
 
 ## Day 12: Devu, the Dumb Guy
 
