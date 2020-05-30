@@ -2,7 +2,7 @@
 
 Self-Improving my Algorithmic coding skills.
 
-- May 30: [Day 12: Devu, the Dumb Guy](#day-13-devu-the-dump-guy)
+- May 30: [Day 13: Devu, the Dumb Guy](#day-13-devu-the-dump-guy)
 - May 29: [Day 12: Devu, the Dumb Guy](#day-12-devu-the-dump-guy)
 - May 28: [Day 11: Passwords](#day-11-passwords)
 - May 27: [Day 10: Arrays](#day-10-arrays)
