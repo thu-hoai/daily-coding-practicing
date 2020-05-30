@@ -2,7 +2,8 @@
 
 Self-Improving my Algorithmic coding skills.
 
-- May 30: [Day 13: Devu, the Dumb Guy](#day-13-devu-the-dump-guy)
+- May 31: [Day 14: Chores](#day-14-chores)
+- May 30: [Day 13: Alice Bob and Chocolate](#day-13-alice-bob-and-chocolate)
 - May 29: [Day 12: Devu, the Dumb Guy](#day-12-devu-the-dump-guy)
 - May 28: [Day 11: Passwords](#day-11-passwords)
 - May 27: [Day 10: Arrays](#day-10-arrays)
@@ -16,7 +17,18 @@ Self-Improving my Algorithmic coding skills.
 - Mar 19: [Day 2: Mass of Molecule](#day-2-mass-of-molecule)
 - Mar 18: [Day 1: Transform the Expression](#day-1-transform-the-expression)
 
-## Day 13: Devu, the Dumb Guy
+## Day 14: Chores
+
+_\#Sorting_
+
+_[Link](http://209.97.167.211/cfp.jsp?id=R169A)_
+
+```
+Time limit per test: 2 seconds
+Memory limit per test: 256 megabytes
+```
+
+## Day 13: Alice Bob and Chocolate
 
 _\#algoComplexity_
 
