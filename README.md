@@ -2,6 +2,10 @@
 
 Self-Improving my Algorithmic coding skills.
 
+2021
+- Oct 8:
+
+2020
 - May 31: [Day 14: Chores](#day-14-chores)
 - May 30: [Day 13: Alice Bob and Chocolate](#day-13-alice-bob-and-chocolate)
 - May 29: [Day 12: Devu, the Dumb Guy](#day-12-devu-the-dump-guy)
@@ -17,6 +21,14 @@ Self-Improving my Algorithmic coding skills.
 - Mar 19: [Day 2: Mass of Molecule](#day-2-mass-of-molecule)
 - Mar 18: [Day 1: Transform the Expression](#day-1-transform-the-expression)
 
+--------------------------------------------------------------
+__2021__
+## Day 1: Java programming basic
+_[Link](https://www.journaldev.com/370/java-programming-interview-questions)_
+
+
+---------------------------------------------------------------
+__2020__
 ## Day 14: Chores
 
 _\#Sorting_
