@@ -1,5 +1,6 @@
-package com.example.algorithms;
+package com.example.algorithms.leetcode;
 
+import com.example.algorithms.leetcode.LongestCommonPrefix;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
