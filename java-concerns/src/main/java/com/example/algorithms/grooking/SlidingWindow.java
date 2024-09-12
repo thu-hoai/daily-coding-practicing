@@ -1,8 +1,33 @@
 package com.example.algorithms.grooking;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SlidingWindow {
 
+    /**
+     * https://leetcode.com/problems/fruit-into-baskets/description/
+     */
+    public static int totalFruit(int[] fruits) {
 
+        int left = 0;
+        int max = Integer.MIN_VALUE;
+        Map<Integer, Integer> numsByType = new HashMap<>();
+        for (int i = 0; i < fruits.length; i++) {
+            numsByType.put(fruits[i], numsByType.getOrDefault(fruits[i], 0) + 1);
+            if (numsByType.size() > 2) {
+                int newNum = numsByType.get(fruits[left]) - 1;
+                if (newNum == 0) {
+                    numsByType.remove(fruits[left]);
+                } else {
+                    numsByType.put(fruits[left], newNum);
+                }
+                left ++;
+            }
+            max = Math.max(max, i - left + 1);
+        }
+        return max;
+    }
 
     /**
      * https://leetcode.com/problems/minimum-size-subarray-sum/

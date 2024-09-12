@@ -13,6 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SlidingWindowTest {
 
     @ParameterizedTest
+    @MethodSource("totalFruitData")
+    void testTotalFruit(int[] fruits, int expected) {
+        assertEquals(expected, totalFruit(fruits));
+    }
+
+    @ParameterizedTest
     @MethodSource("inputExpected")
     void testFindMaxAverage(int[] nums, int k, double expected) {
         assertEquals(expected, findMaxAverageSlidingWindow(nums, k));
@@ -26,6 +32,16 @@ public class SlidingWindowTest {
         assertEquals(expected, minSubArrayLen(target, nums));
     }
 
+    public static Stream<Arguments> totalFruitData() {
+        return Stream.of(
+                Arguments.of(new int[] {1,2,1}, 3),
+                Arguments.of(new int[] {0,1,2,2}, 3),
+                Arguments.of(new int[] {1,2,3,2,2}, 4),
+                Arguments.of(new int[] {0,0,0,8,3,8,3,7,4}, 4),
+                Arguments.of(new int[] {3,3,3,1,2,1,1,2,3,3,4}, 5)
+        );
+    }
+
     public static Stream<Arguments> dataTestMinSubArrayLen() {
         return Stream.of(
                 Arguments.of(7, new int[] {2,3,1,2,4,3}, 2),
@@ -33,7 +49,6 @@ public class SlidingWindowTest {
                 Arguments.of(11, new int[] {1,1,1,1,1,1,1,1}, 0)
         );
     }
-
 
     private static Stream<Arguments> inputExpected() {
         return Stream.of(
