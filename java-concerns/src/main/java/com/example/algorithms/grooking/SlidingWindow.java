@@ -1,9 +1,71 @@
 package com.example.algorithms.grooking;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class SlidingWindow {
+
+    public static int lengthOfLongestSubstring(String s) {
+        if (s == null) {return 0;}
+
+        char[] chars = s.toCharArray();
+        int max = Integer.MIN_VALUE;
+        int start = 0;
+        List<Character> temp = new ArrayList<>();
+        for (int end = 0; end < chars.length; end++) {
+            char current = chars[end];
+            if (temp.contains(current)) {
+                start = temp.indexOf(current) + 1 + start;
+                temp.removeIf(character -> temp.indexOf(character) <= temp.indexOf(current));
+            }
+            temp.add(chars[end]);
+            max = Math.max(max, end - start + 1);
+        }
+        return max != Integer.MIN_VALUE ? max : 0;
+    }
+
+    public static int lengthOfLongestSubstringImproved(String s) {
+        char[] chars = s.toCharArray();
+        int max = Integer.MIN_VALUE;
+        int start = 0;
+        Map<Character, Integer> temp = new HashMap<>();
+        for (int end = 0; end < chars.length; end++) {
+            char current = chars[end];
+            if (temp.containsKey(current)) {
+                start = Math.max(start, temp.get(current) + 1);
+            }
+
+            temp.put(current, end);
+            max = Math.max(max, end - start + 1);
+        }
+        return max != Integer.MIN_VALUE ? max : 0;
+    }
+
+    // Given a string, find the length of the longest substring in it with at most two distinct
+    //characters.
+    //ccaabbb -> 4, eceba -> 3
+    public static int findLengthOfLongestSubstring(String string) {
+        int atMost = 2;
+
+        int max = Integer.MIN_VALUE;
+        int left = 0;
+        char[] chars = string.toCharArray();
+        Map<Character, Integer> res = new HashMap<>() {};
+        for (int i = 0; i < chars.length; i++) {
+            char character = chars[i];
+            res.put(character, res.getOrDefault(character, 1) + 1);
+
+            if (res.size() > atMost) {
+                if (res.get(character) > 1) {
+                    res.put(character, res.get(character) - 1);
+                } else {
+                    res.remove(character);
+                }
+                left++;
+            }
+            max = Math.max(max, i - left + 1);
+        }
+        return max;
+    }
 
     /**
      * https://leetcode.com/problems/fruit-into-baskets/description/
@@ -15,7 +77,7 @@ public class SlidingWindow {
         Map<Integer, Integer> numsByType = new HashMap<>();
         for (int i = 0; i < fruits.length; i++) {
             numsByType.put(fruits[i], numsByType.getOrDefault(fruits[i], 0) + 1);
-            if (numsByType.size() > 2) {
+            while (numsByType.size() > 2) {
                 int newNum = numsByType.get(fruits[left]) - 1;
                 if (newNum == 0) {
                     numsByType.remove(fruits[left]);

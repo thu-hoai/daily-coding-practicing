@@ -13,6 +13,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SlidingWindowTest {
 
     @ParameterizedTest
+    @MethodSource("lengthOfLongestSubstringData")
+    void testLengthOfLongestSubstring(String string, int expected) {
+        assertEquals(expected, lengthOfLongestSubstring(string));
+        assertEquals(expected, lengthOfLongestSubstringImproved(string));
+    }
+
+    @ParameterizedTest
     @MethodSource("totalFruitData")
     void testTotalFruit(int[] fruits, int expected) {
         assertEquals(expected, totalFruit(fruits));
@@ -30,6 +37,20 @@ public class SlidingWindowTest {
     void testMinSubArrayLen(int target, int[] nums, int expected) {
         assertEquals(expected, minSubArrayLenSlidingWindow(target, nums));
         assertEquals(expected, minSubArrayLen(target, nums));
+    }
+
+    public static Stream<Arguments> lengthOfLongestSubstringData() {
+        return Stream.of(
+                Arguments.of("tmmzuxt", 5),
+                Arguments.of("abcabcbb", 3),
+                Arguments.of("bbbbb", 1),
+                Arguments.of("ab", 2),
+                Arguments.of("aab", 2),
+                Arguments.of("a", 1),
+                Arguments.of(" ", 1),
+                Arguments.of("", 0),
+                Arguments.of("pwwkew", 3)
+        );
     }
 
     public static Stream<Arguments> totalFruitData() {
